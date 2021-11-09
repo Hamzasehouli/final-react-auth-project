@@ -1,0 +1,33 @@
+.form {
+  width: 40%;
+  padding: 2rem;
+  border-radius: 6px;
+  margin: 5rem auto;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+.control {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.267);
+  height: 3rem;
+  padding: 0.8rem;
+  display: inline-block;
+}

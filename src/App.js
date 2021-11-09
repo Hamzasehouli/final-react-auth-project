@@ -4,6 +4,7 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 export default function App() {
   return (
@@ -21,8 +22,11 @@ export default function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <Route path="/signup">
+              <Signup></Signup>
+            </Route>
             <Route path="*">
-              <p>404, no page found with the giver URL</p>
+              <p>404, no page found with the given URL</p>
             </Route>
           </Switch>
         </main>

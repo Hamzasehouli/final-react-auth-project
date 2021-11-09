@@ -1,4 +1,4 @@
-import { classes } from "./Form.modules.css";
+import classes from "./Form.module.css";
 export default function Form(props) {
-  return <form>{props.children}</form>;
+  return <form className={classes.form}>{props.children}</form>;
 }
