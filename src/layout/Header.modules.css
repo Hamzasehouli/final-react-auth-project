@@ -1,0 +1,16 @@
+nav {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-light);
+  padding: 1.5rem 2rem;
+}
+
+a {
+  color: inherit;
+}
+
+.nav__links {
+  display: flex;
+}

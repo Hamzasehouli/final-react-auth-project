@@ -1,0 +1,45 @@
+useState/////////////////////////////////////////
+import React, { useState } from "react";
+import ReactDom from "react-dom";
+
+function Index() {
+  const [val, setVal] = useState("");
+  const handleInput = function (e) {
+    setVal(e.target.value);
+  };
+  return (
+    <form>
+      <input onInput={handleInput} type="text"></input>
+      <p>{val}</p>
+      <button type="submit">submit</button>
+    </form>
+  );
+}
+
+ReactDom.render(<Index></Index>, document.getElementById("root"));
+
+hooks rules/////////////////////////////////////
+
+start with use
+must be inside function/component body
+can no be calles conditionaly like if (useState())
+we can use more than one useState hook in the same component 
+
+
+functional update from///////////////////////////////////////////////////////
+
+setCounter((prev) => {
+      return ++prev;
+    }); OR setCounter(++value) but the last one does not respect the chaining of the increment event like the former does
+
+
+useEffect /////////////////////////////////////////////////////////////////////////////////
+
+side effect is all about working outside a component
+useEffect will be run every time the components render
+
+useState reserves the previous value for the next render and re-redner the components, so the useEffect hook will be called dynaöically 
+
+
+to conditionize the useEffect, which means to run it only if some cindittion is filled;
+instead to wrapp the useEffect around if statement, w pass the if block inseide the use effect

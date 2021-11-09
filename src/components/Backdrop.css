@@ -1,0 +1,9 @@
+.bd {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 16, 16, 0.623);
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
