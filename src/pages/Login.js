@@ -83,16 +83,6 @@ export default function Login(props) {
       <h2>Login</h2>
       <div className={classes.control}>
         <label htmlFor="username" className={classes.label}>
-<<<<<<< HEAD
-          Username
-        </label>
-        <input
-          ref={enteredUsername}
-          type="text"
-          id="username"
-          className={classes.input}
-        ></input>
-=======
           Email
         </label>
         <input
@@ -102,7 +92,6 @@ export default function Login(props) {
           className={classes.input}
         ></input>{" "}
         <p>{emailError ? emailError : ""}</p>
->>>>>>> dede5d3 (Final changes)
       </div>
       <div className={classes.control}>
         <label htmlFor="password" className={classes.label}>
@@ -114,10 +103,7 @@ export default function Login(props) {
           id="password"
           className={classes.input}
         ></input>
-<<<<<<< HEAD
-=======
         <p>{passwordError ? passwordError : ""}</p>
->>>>>>> dede5d3 (Final changes)
       </div>
       <Button class="flat" typ="submit">
         Login
