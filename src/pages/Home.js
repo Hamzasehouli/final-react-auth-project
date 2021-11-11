@@ -27,22 +27,24 @@ export default function Home() {
     setModal(!modal);
     setBackdrop(!backdrop);
   };
-  return (
-    <>
-      <button onClick={showModal} type="button">
-        show modal
-      </button>
-      {modal && <Modal onClick={showModal}></Modal>}
-      {backdrop && <Backdrop onClick={setBackdrop}></Backdrop>}
-      <ul>
-        {users.map((user) => (
-          <li key={user.name}>
-            <p>{user.name}</p>
-            <p>{user.age}</p>
-            <p>{user.city}</p>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
+  // return (
+  //   <>
+  //     <button onClick={showModal} type="button">
+  //       show modal
+  //     </button>
+  //     {modal && <Modal onClick={showModal}></Modal>}
+  //     {backdrop && <Backdrop onClick={setBackdrop}></Backdrop>}
+  //     <ul>
+  //       {users.map((user) => (
+  //         <li key={user.name}>
+  //           <p>{user.name}</p>
+  //           <p>{user.age}</p>
+  //           <p>{user.city}</p>
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   </>
+  // );
+
+  return <p>Homepage</p>;
 }
